@@ -54,7 +54,7 @@ export declare class World {
      * Implements fps limiter and frame-skipping
      * Calls world's "update" function before rendering.
      * @param {World} world
-     */
+   ds */
     render(world: World): void;
     setTimeScale(value: number): void;
     add(worldEntity: IWorldEntity): void;
