@@ -1,15 +1,19 @@
 <!DOCTYPE html>
-<html>
-
+<html lang="en">
 <head>
-	<title>flying airplane</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sketchbook</title>
 </head>
-
 <body>
-	<script src="build/sketchbook.min.js"></script>
-	<script>
-		const world = new Sketchbook.World('build/assets/world.glb');
-	</script>
+    <script src="build/sketchbook.min.js"></script> <!-- Ensure this path is correct -->
+    <script>
+        // Ensure Sketchbook is loaded
+        if (typeof Sketchbook === 'undefined') {
+            console.error('Sketchbook is not defined.');
+        } else {
+            console.log('Sketchbook is loaded:', Sketchbook);
+        }
+    </script>
 </body>
-
 </html>
