@@ -5,16 +5,16 @@ module.exports = {
         app: './src/ts/sketchbook.ts'
     },
     output: {
-        filename: './build/sketchbook.min.js',
+        filename: 'sketchbook.min.js',
         library: 'Sketchbook',
         libraryTarget: 'umd',
-        path: path.resolve(__dirname)
+        path: path.resolve(__dirname, 'build')
     },
     resolve: {
         alias: {
           cannon: path.resolve(__dirname, './src/lib/cannon/cannon.js')
         },
-        extensions: [ '.tsx', '.ts', '.js' ],
+        extensions: ['.tsx', '.ts', '.js'],
     },
     module: {
         rules: [
